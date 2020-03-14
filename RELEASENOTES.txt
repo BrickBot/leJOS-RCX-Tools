@@ -1,0 +1,88 @@
+RCXTools v1.6
+-------------
+  - added option "lejosc -source 1.2" for JDK1.5
+
+
+
+RCXTools v1.5
+-------------
+  - completely new package structure
+  - RCXDownload and RCXDirectMode inherit from RCXTool
+  - replaced send.c by using josx.rcxcomm.Tower in a separate process
+    (therefore direct communication is up to twice faster)
+  - removed rPacket in RCXReceiver (mem leak hint by T. Laursen)
+  - moved SensorListener of RCXReceiver in a separat class
+  - added class Motors to control all motors at the same time
+  - added support for paths containing spaces
+  - added choices for fast (4x) and slow (1x) downloading
+  - added path check for path to lejos
+  - added autostart (remote command for starting a program)
+  - added splash screen
+  - entries in FileBrowser are sorted
+  - replaced images in the top panel of RCXDownload and RCXDirectMode
+
+
+
+
+RCXTools v1.4
+-------------
+
+  - added USB support
+  - added a progress bar for the download process
+  - added option "lejosc -target 1.1" for JDK1.4
+  - replaced class ROM by class Battery in package rcxdirect
+  - removed a bug reported by David Hill (mem leak in RCXReceiver.java)
+
+
+
+
+RCXTools v1.3
+-------------
+
+  - Corrected CLASSPATH-Settings in the compiler routine of RCXDownload
+    (there were wrong settings in v1.2)
+  - Doublebuffered 7-Segment-Display of TextLCD-Panel
+
+
+
+
+RCXTools v1.2
+-------------
+
+  - Replaced the rcxport/javax.comm-implementation by an extended version
+    of send.c from Kekoa Proudfoot (javax.comm-Driver is no longer necessary).
+  - Improved communication in package rcxdirect (complement header byte in
+    reply; the package does not differ anymore from that used for direct
+    communication in pc-sided programs).
+  - Added a modified version of FileBrowser.java from Thierry Kormann /
+    Koala Graphics that comes with a platform-independent FilenameFilter.
+  - Replaced FileDialog for chosing leJOS- and JDK-directory by FileBrowser.
+  - Added an selection of three different color settings!
+  - CLASSPATH-settings for RCXDownload and RCXDirectMode are no longer
+    necessary.
+  - Gave up the Installation-GUI, because javax.comm is no longer needed.
+
+
+
+
+RCXTools v1.1
+-------------
+
+  - Placed communication for RCXDirectMode in a seperate package 'rcxdirect'
+    (this 'rcxdirect' package differs quite a bit from that used for direct
+    communication in pc-sided java programs / 
+    see http://rcxtools.sourceforge.net/rcxdirect/e_index.html)
+  - Added TextLCD.print panel to RCXDirectMode (pressing virtual "On-Off"-
+    Button will skip to application title)
+  - RCXDownload is resizable now!!
+  - Set number of chosen java sources from 10 entries to 20 (RCXDownload).
+  - Added 'Reset'-Button to RCXDownload: List of java sources and the message
+    area can be reset.
+  - RCXDownload exclusively accepts files with .java suffix
+  - Added a FilenameFilter to RCXDownload (Doesn't work on Win32; the bug id 
+    is 4031440, and it can be seen at the Java Developer Connection. It's
+    just for an upcoming linux version.)
+  - Made installation easier using a completely modified version of install.java
+    from Andrew Hunt, Toolshed Technologies Inc.
+    The Installation-GUI can also install leJOS and javax.comm-Driver if the
+    needed zip-Files are in the same folder as install.class

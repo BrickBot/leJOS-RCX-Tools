@@ -1,0 +1,9 @@
+-d ..\apidoc\rcxdirect
+-sourcepath .
+-windowtitle "package rcxdirect"
+-breakiterator
+-author
+-version
+-public
+-use
+-nodeprecated

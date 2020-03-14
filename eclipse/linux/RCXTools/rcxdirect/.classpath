@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path=""/>
+    <classpathentry kind="lib" path="/opt/lejos/lib/classes.jar"/>
+    <classpathentry kind="lib" path="/opt/lejos/lib/rcxrcxcomm.jar"/>
+    <classpathentry kind="lib" path="/opt/lejos/lib/pcrcxcomm.jar"/>
+    <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+    <classpathentry kind="output" path=""/>
+</classpath>
