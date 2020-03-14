@@ -1,3 +1,12 @@
+leJOS-RCX-Tools
+===============
+A visual interface for leJOS. RCXDownload automatically sets the JDK-, leJOS- and ClassPaths, compiles the chosen Java-Source, shows the compiler messages and is able to link and load both the compiled classes and the leJOS-firmware.
+
+Original Website
+ • English – http://rcxtools.sourceforge.net/e_home.html
+ • Deutsch – http://rcxtools.sourceforge.net/d_home.html
+
+
 RCXDOWNLOAD AND RCXDIRECTMODE README
 ------------------------------------
 
